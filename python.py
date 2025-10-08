@@ -140,7 +140,7 @@ if wacc > 0:
 
             except Exception as e:
                 st.error(f"Có lỗi xảy ra khi tính toán chỉ số: {e}. Vui lòng kiểm tra các thông số đầu vào.")
-        else:
+            else:
             st.warning("WACC (Tỷ lệ chiết khấu) phải lớn hơn 0 để tính toán NPV và DPP.")
 
     else:
