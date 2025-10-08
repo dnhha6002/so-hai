@@ -1,29 +1,3 @@
-Bạn là một chuyên gia phân tích dự án đầu tư có kinh nghiệm. Dựa trên các chỉ số hiệu quả dự án sau, hãy đưa ra nhận xét ngắn gọn, khách quan (khoảng 3-4 đoạn) về khả năng chấp nhận và rủi ro của dự án. 
-        
-        Các chỉ số cần phân tích:
-        - NPV: {metrics_data['NPV']:.2f}
-        - IRR: {metrics_data['IRR']:.2%}
-        - WACC (Tỷ lệ chiết khấu): {wacc_rate:.2%}
-        - PP (Thời gian hoàn vốn): {metrics_data['PP']} năm
-        - DPP (Thời gian hoàn vốn có chiết khấu): {metrics_data['DPP']} năm
-        
-        Chú ý:
-        1. Đánh giá tính khả thi (NPV > 0 và IRR > WACC).
-        2. Nhận xét về tốc độ hoàn vốn (PP và DPP).
-        3. Kết luận tổng thể về việc chấp nhận hay từ chối dự án.
-        """
-
-        response = client.models.generate_content(
-            model=model_name,
-            contents=prompt
-        )
-        return response.text
-
-    except APIError as e:
-        return f"Lỗi gọi Gemini API: Vui lòng kiểm tra Khóa API. Chi tiết lỗi: {e}"
-    except Exception as e:
-        return f"Đã xảy ra lỗi không xác định: {e}"
-
 # --- Giao diện và Luồng chính ---
 
 # Lấy API Key
