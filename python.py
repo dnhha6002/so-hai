@@ -143,7 +143,7 @@ if wacc > 0:
             else:
                  st.warning("WACC (Tỷ lệ chiết khấu) phải lớn hơn 0 để tính toán NPV và DPP.")
 
-    else:
+else:
         st.warning("Vui lòng đảm bảo Dòng đời Dự án và Vốn Đầu tư đã được trích xuất thành công và có giá trị lớn hơn 0.")
 
 else:
