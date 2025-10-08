@@ -109,7 +109,7 @@ if st.session_state['extracted_data'] is not None:
         # ****************** Tính toán Chỉ số (Yêu cầu 3) ******************
 st.subheader("4. Các Chỉ số Đánh giá Hiệu quả Dự án")
         
-        if wacc > 0:
+        if wacc>0:
             try:
                 npv, irr, pp, dpp = calculate_project_metrics(df_cashflow, initial_investment, wacc)
                 
