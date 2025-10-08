@@ -41,7 +41,7 @@ if st.session_state['extracted_data'] is not None:
         initial_investment = float(data.get('Vốn đầu tư', 0))
         project_life = int(data.get('Dòng đời dự án', 0))
         annual_revenue = float(data.get('Doanh thu hàng năm', 0))
-annual_cost = float(data.get('Chi phí hoạt động hàng năm', 0))
+         annual_cost = float(data.get('Chi phí hoạt động hàng năm', 0))
         wacc = float(data.get('WACC', 0.1)) # Giả định WACC 10% nếu không trích xuất được
         tax_rate = float(data.get('Thuế suất', 0.2)) # Giả định Thuế 20% nếu không trích xuất được
         
